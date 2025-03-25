@@ -70,7 +70,7 @@ public class StockController {
         return ResponseEntity.notFound().build();
     }
 
-    //Kao poboljsanje za ovaj upit, treba dodati proveru da li je startDate i endDate prosledjeni
+    //Kao poboljsanje za ovaj upit, treba dodati proveru da li su startDate i endDate prosledjeni
     @GetMapping("/max-profit/{stockSymbol}")
     public ResponseEntity<MaxProfitResponse> getMaxProfit(
             @PathVariable String stockSymbol,

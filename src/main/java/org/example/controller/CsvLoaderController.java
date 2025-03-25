@@ -21,10 +21,10 @@ public class CsvLoaderController {
         this.csvLoaderService = csvLoaderService;
     }
 
+    // POST /api/csv-loader/upload/?filePath={filePath} filePath - Putanja do Stock.csv fajla	
     @PostMapping("/upload")
     public ResponseEntity<String> uploadCsv(@RequestParam("filePath") String filePath) {
         try {
-            // Učitavanje CSV-a sa dinamičke putanje
             csvLoaderService.loadCsvToDatabase(filePath);
 
             return ResponseEntity.ok("CSV file successfully uploaded and data saved to the database.");

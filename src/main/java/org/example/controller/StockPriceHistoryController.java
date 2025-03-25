@@ -29,7 +29,7 @@ public class StockPriceHistoryController {
             @RequestParam LocalDate startDate,
             @RequestParam LocalDate endDate) {
 
-        // Dohvatiti istoriju cena
+
         return ResponseEntity.ok(priceHistoryService.getStockPriceHistory(stockId, startDate, endDate));
     }
 
