@@ -1,0 +1,27 @@
+# Maven/Gradle build output
+target/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+
+# OS specifični fajlovi (Windows/macOS/Linux)
+.DS_Store
+Thumbs.db
+
+# JBoss/Tomcat
+*.log
+
+# Log fajlovi
+*.log
+
+
+# Java class files
+*.class
+
+.env
+
+# Ignoriši application.properties sa osetljivim podacima
+src/main/resources/application.properties
