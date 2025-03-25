@@ -36,7 +36,7 @@ public class CsvLoaderService {
         List<String[]> records = csvReader.readAll();
 
 
-        for (int i=2;i<3;i++) {
+        for (int i=1;i<records.size();i++) {
             String[] record = records.get(i);
             Stock stock = new Stock();
             stock.setCompanyName(record[0]);
@@ -54,6 +54,7 @@ public class CsvLoaderService {
 
             for (int j=1;j<histories.size();j++) {
                 String[] history = histories.get(j);
+                System.out.println(record[0]);
                 System.out.println(j);
                 StockPriceHistory stockPriceHistory = new StockPriceHistory();
 
